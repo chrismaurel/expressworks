@@ -2,9 +2,10 @@ var express = require('express')
 var app = express()
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-  host     : process.argv[3],
-  user     : process.argv[4],
-  password : process.argv[5]
+  database     : process.argv[3],
+  host     : process.argv[4],
+  user     : process.argv[5],
+  password : process.argv[6]
 });
 
 app.get('/users', function(req, res) {

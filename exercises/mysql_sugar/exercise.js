@@ -17,8 +17,8 @@ exercise.addSetup(function(mode, callback) {
   this.submissionPort = rndport()
   this.solutionPort   = this.submissionPort + 1
 
-  this.submissionArgs = [this.submissionPort, "192.168.16.121", "express", "express"]
-  this.solutionArgs   = [this.solutionPort, "192.168.16.121", "express", "express"]
+  this.submissionArgs = [this.submissionPort, "192.168.16.121", "myt_express", "express", "express"]
+  this.solutionArgs   = [this.solutionPort, "192.168.16.121", "myt_express", "express", "express"]
 
   process.nextTick(callback)
 })
