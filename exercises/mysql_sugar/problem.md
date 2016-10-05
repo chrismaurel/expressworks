@@ -33,6 +33,6 @@ connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
 connection.end();
 ```
 
-In your solution, please use `process.argv[3]` as the database, `process.argv[4]` as the host, 
+In your solution, please use `process.argv[3]` as the host, `process.argv[4]` as the database
 `process.argv[5]` as the user, `process.argv[6]` as the password
 
